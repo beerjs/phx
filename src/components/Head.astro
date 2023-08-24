@@ -1,0 +1,53 @@
+---
+import { SEO } from 'astro-seo';
+import { GoogleFontsOptimizer } from 'astro-google-fonts-optimizer';
+
+interface Props {
+  title?: string;
+  description?: string;
+  type?: string;
+  image?: string;
+}
+
+const { title, description, type, image } = Astro.props;
+---
+
+<head>
+  <title>{title} | BeerJS</title>
+  <SEO
+    title={title}
+    titleDefault="BeerJS"
+    titleTemplate="%s | BeerJS"
+    description={description}
+    openGraph={{
+      basic: {
+        title: `${title} | BeerJS` || 'The meetup for beer and JavaScript lovers. | BeerJS',
+        type: type || 'website',
+        image: image || 'fallback_image_here',
+      },
+    }}
+    twitter={{
+      creator: '@d_bozhinovski',
+    }}
+    extend={{
+      // extending the default link tags
+      link: [{ rel: 'icon', href: '/favicon.ico' }],
+      // extending the default meta tags
+      meta: [
+        {
+          name: 'twitter:image',
+          content: image,
+        },
+        {
+          name: 'twitter:title',
+          content: `${title} | BeerJS` || 'The meetup for beer and JavaScript lovers. | BeerJS',
+        },
+        { name: 'twitter:description', content: description },
+      ],
+    }}
+  />
+  <GoogleFontsOptimizer
+    url="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap"
+  />
+  <GoogleFontsOptimizer url="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" />
+</head>

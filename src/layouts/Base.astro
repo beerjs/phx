@@ -1,0 +1,23 @@
+---
+import Head from '../components/Head.astro';
+import Navigation from '../components/Navigation.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  type?: string;
+}
+
+const { title, description, image, type } = Astro.props;
+---
+
+<html lang="en">
+  <Head title={title} description={description} image={image} type={type} />
+  <body>
+    <div class="flex flex-col bg-bg min-h-screen">
+      <Navigation />
+      <slot />
+    </div>
+  </body>
+</html>
