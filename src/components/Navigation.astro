@@ -2,12 +2,25 @@
 import { Icon } from 'astro-icon';
 ---
 
-<nav class="flex w-full items-center justify-center gap-16 py-8 text-white font-jetbrains font-normal text-[18px]">
-  <a href="/about">About</a>
-  <a href="/locations">Locations</a>
-  <a href="/" class="w-[66px] min-w-[66px]">
-    <Icon name="beerjs" />
-  </a>
-  <a href="/news">News</a>
-  <a href="/starter-kit">Start your own</a>
+<nav class="grid grid-cols-12 py-8">
+  <div class="col-span-2"></div>
+  <div
+    class="flex w-full items-center justify-center gap-16 text-white font-jetbrains font-normal text-[18px] grow col-span-8"
+  >
+    <a href="/about">About</a>
+    <a href="/locations">Locations</a>
+    <a href="/" class="w-[66px] min-w-[66px]">
+      <Icon name="beerjs" />
+    </a>
+    <a href="/news">News</a>
+    <a href="/starter-kit">Start your own</a>
+  </div>
+  <div class="flex gap-4 items-center justify-center col-span-2">
+    <a href="/" class="justify-self-end">
+      <Icon name="github" class="w-[24px] min-w-[24px]" />
+    </a>
+    <a href="/">
+      <Icon name="twitter" class="w-[24px] min-w-[24px]" />
+    </a>
+  </div>
 </nav>
