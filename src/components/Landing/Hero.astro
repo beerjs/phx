@@ -1,57 +1,14 @@
+---
+import BigText from '../BigText.astro';
+import Link from '../Link.astro';
+---
+
 <div class="flex flex-col items-center justify center">
-  <div class="flex flex-col items-center justify-center w-full relative">
-    <h1
-      class="text-yellow font-jetbrains uppercase block pt-[160px] text-[227px] font-black leading-none tracking-tighter"
-    >
-      beer.js
-    </h1>
-    <h2 class="bg-white flex items-center justify-center font-jetbrains text-[48px] font-bold absolute -bottom-[65px]">
-      Beer & JavaScript, worldwide!
-    </h2>
+  <div class="pt-[80px] md:pt-[160px] w-full">
+    <BigText title="beer.js" subtitle="Beer & JavaScript, worldwide!">
   </div>
-  <div class="mt-[calc(96px+63px+60px)] flex gap-[48px] w-full items-center justify-center">
-    <button class="bg-yellow">Start your own</button>
-    <button class="border-yellow text-white">Find a meetup</button>
-  </div>
-  <div class="w-full flex flex-col mt-[240px] relative">
-    <div class="foam-top"></div>
-    <div class="white-square"></div>
-    <div class="yellow-parent">
-      <div class="foam-bottom"></div>
-    </div>
+  <div class="mt-[120px] md:mt-[220px] flex flex-col md:flex-row gap-[18px] md:gap-[48px] w-full items-center justify-center">
+    <Link href="/start-your-own" >Start your own</Link>
+    <Link href="/locations" variant={2} >Find a meetup</Link>
   </div>
 </div>
-
-<style>
-  h1 {
-    text-shadow: -9px -9px 0px #0f0d0e;
-  }
-
-  h2 {
-    border: 6px solid #0f0d0e;
-    padding: 6px 24px;
-    transform: rotate(-4deg);
-  }
-
-  button {
-    @apply flex border-black border-[3px] !font-jetbrains !py-[14px] !px-[60px] !text-[18px] !font-bold;
-  }
-
-  .foam-top {
-    @apply !w-full h-[200px] !bg-cover;
-    background: url('/foam-top.svg') no-repeat;
-  }
-
-  .white-square {
-    @apply w-full h-[200px] bg-[#FDF8ED] absolute top-[60px];
-  }
-
-  .yellow-parent {
-    @apply bg-yellow w-full h-[600px] relative;
-  }
-
-  .foam-bottom {
-    @apply !w-full h-[358px] !bg-cover absolute;
-    background: url('/foam-bottom.svg') no-repeat;
-  }
-</style>

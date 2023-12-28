@@ -1,0 +1,38 @@
+---
+import NewsCard from "../NewsCard.astro";
+
+---
+
+<div class="w-full flex flex-col mt-[240px]" id="beercard">
+  <section class="content">
+    <h3>news</h3>
+    <p>Stay up-to-date on what's up with Beer.js around the globe!</p>
+    <div class="pt-[120px] flex flex-wrap gap-8">
+      <NewsCard title="What's Beer.js?" date="2021-09-01" tags={["news", "event"]} link="/" description="Test one two" />
+      <NewsCard title="What's Beer.js?" date="2021-09-01" tags={["news", "event"]} link="/" description="Test one two" />
+      <NewsCard title="What's Beer.js?" date="2021-09-01" tags={["news", "event"]} link="/" description="Test one two" />
+      <NewsCard title="What's Beer.js?" date="2021-09-01" tags={["news", "event"]} link="/" description="Test one two" />
+    </div>
+  </section>
+</div>
+
+<style>
+  #beercard {
+    background: url('/beercard-bg.svg') no-repeat center top;
+    background-size: cover;
+  }
+
+
+  .content {
+    @apply w-full flex flex-col items-center justify-center py-[60px];
+  }
+
+  .content h3 {
+    @apply font-jetbrains uppercase text-[60px] font-black text-byellow;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000,-5px -5px 0px #0F0D0E;
+  }
+
+  .content p {
+    @apply font-jetbrains font-bold text-[22px] mt-1;
+  }
+</style>

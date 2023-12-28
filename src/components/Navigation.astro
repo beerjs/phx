@@ -1,5 +1,7 @@
 ---
-import { Icon } from 'astro-icon';
+import BeerJS from '../icons/beerjs.astro';
+import Twitter from '../icons/twitter.astro';
+import Github from '../icons/github.astro';
 ---
 
 <nav class="grid grid-cols-12 py-8">
@@ -10,17 +12,17 @@ import { Icon } from 'astro-icon';
     <a href="/about">About</a>
     <a href="/locations">Locations</a>
     <a href="/" class="w-[66px] min-w-[66px]">
-      <Icon name="beerjs" />
+      <BeerJS />
     </a>
     <a href="/news">News</a>
     <a href="/starter-kit">Start your own</a>
   </div>
   <div class="flex gap-4 items-center justify-center col-span-2">
     <a href="/" class="justify-self-end">
-      <Icon name="github" class="w-[24px] min-w-[24px]" />
+      <Github />
     </a>
     <a href="/">
-      <Icon name="twitter" class="w-[24px] min-w-[24px]" />
+      <Twitter />
     </a>
   </div>
 </nav>
