@@ -1,4 +1,5 @@
 ---
+import CardTag from './CardTag.astro';
 interface Props {
   title: string;
   date: string;
@@ -8,17 +9,10 @@ interface Props {
 }
 
 const { title, date, tags, description, link } = Astro.props;
-
-const colorIndex = [
-  { bg: 'bred', text: 'white' },
-  { bg: 'bblue', text: 'black'},
-  { bg: 'bpurple', text: 'white' },
-  { bg: 'bblack', text: 'white' }
-]
 ---
 
-<div class="flex p-8 flex-col bg-white w-[315px] justify-center border-bbg border rounded font-jetbrains">
-  <div class="flex">{tags.map((t, i) => <label class={`text-${colorIndex[i].text} bg-${colorIndex[i].bg} border-bblack py-[3px] px-[7px] uppercase`}>{t}</label>)}</div>
+<div class="flex p-[16px] flex-col bg-bwhite w-[315px] justify-center border-bbg border rounded font-jetbrains">
+  <div class="flex gap-[8px]">{tags.map((t, i) => <CardTag variant={i+1}>{t}</CardTag>)}</div>
   <h2>{title}</h2>
   <h3>{date}</h3>
   <p>{description}</p>
