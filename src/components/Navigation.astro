@@ -23,10 +23,10 @@ import Menu from '../icons/menu.astro';
     </button>
   </div>
   <div class="gap-4 items-center justify-center col-span-2 hidden lg:flex">
-    <a href="/" class="justify-self-end">
+    <a href="/" class="justify-self-end text-white fill-current">
       <Github />
     </a>
-    <a href="/">
+    <a href="/" class="text-white fill-current">
       <Twitter />
     </a>
   </div>
@@ -34,7 +34,20 @@ import Menu from '../icons/menu.astro';
 
 <div id="mask" class="hidden">
   <sl-drawer label="Drawer" id="drawer" class="drawer">
-    This drawer slides in from the start.
+    <div class="flex flex-col gap-6 text-white font-jetbrains font-normal text-[22px] px-10 py-12">
+      <a href="/about">About</a>
+      <a href="/locations">Locations</a>
+      <a href="/news">News</a>
+      <a href="/starter-kit">Start your own</a>
+      <div class="flex gap-2 pt-10">
+        <a href="/" class="block justify-self-end text-white fill-current width-[24px]">
+          <Github />
+        </a>
+        <a href="/" class="block text-white fill-current width-[29px]">
+          <Twitter />
+        </a>
+      </div>
+    </div>
   </sl-drawer>
 </div>
 
@@ -61,10 +74,14 @@ import Menu from '../icons/menu.astro';
   }
 
   .drawer::part(overlay) {
-    background: rgba(0,0,0, .4);
+    background: rgba(0,0,0, .3);
   }
 
   .drawer::part(close-button) {
     @apply text-bwhite text-2xl text-byellow font-black hover:brightness-125;
+  }
+
+  a {
+    @apply hover:brightness-110 hover:text-byellow;
   }
 </style>
