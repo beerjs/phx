@@ -13,12 +13,12 @@ import Menu from '../icons/menu.astro';
   >
     <a href="/about" class="hidden lg:inline">About</a>
     <a href="/locations" class="hidden lg:inline">Locations</a>
-    <a href="/" class="w-[50px] lg:w-[66px] lg:min-w-[66px]">
+    <a href="/" class="w-[50px] lg:w-[66px] lg:min-w-[66px] hover:brightness-110">
       <BeerJS />
     </a>
     <a href="/news" class="hidden lg:inline">News</a>
     <a href="/starter-kit" class="hidden lg:inline">Start your own</a>
-    <button class="w-[50px] text-bwhite cursor-pointer inline-block lg:hidden" id="menu-button">
+    <button class="w-[50px] text-byellow cursor-pointer inline-block lg:hidden hover:brightness-125" id="menu-button">
       <Menu />
     </button>
   </div>
@@ -65,10 +65,6 @@ import Menu from '../icons/menu.astro';
   }
 
   .drawer::part(close-button) {
-    @apply text-bwhite;
-  }
-
-  #drawer-close {
-    @apply text-bwhite;
+    @apply text-bwhite text-2xl text-byellow font-black hover:brightness-125;
   }
 </style>
