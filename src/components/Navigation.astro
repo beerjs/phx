@@ -13,7 +13,7 @@ import Menu from '../icons/menu.astro';
   >
     <a href="/about" class="hidden lg:inline">About</a>
     <a href="/locations" class="hidden lg:inline">Locations</a>
-    <a href="/" class="w-[50px] lg:w-[66px] lg:min-w-[66px] hover:brightness-110">
+    <a href="/" id="logo" class="w-[50px] lg:w-[66px] lg:min-w-[66px] hover:brightness-110">
       <BeerJS />
     </a>
     <a href="/news" class="hidden lg:inline">News</a>
@@ -83,5 +83,9 @@ import Menu from '../icons/menu.astro';
 
   a {
     @apply hover:brightness-110 hover:text-byellow;
+  }
+
+  #logo:hover {
+    filter: drop-shadow(0 0 6px #F2BD4C);
   }
 </style>
