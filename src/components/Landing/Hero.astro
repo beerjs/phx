@@ -1,4 +1,5 @@
 ---
+import ArrowLinkDiagonal from '../../icons/arrow-link-diagonal.astro';
 import BigText from '../BigText.astro';
 import Link from '../Link.astro';
 ---
@@ -8,7 +9,7 @@ import Link from '../Link.astro';
     <BigText title="beer.js" subtitle="Beer & JavaScript, worldwide!">
   </div>
   <div class="mt-[120px] md:mt-[220px] flex flex-col md:flex-row gap-[18px] md:gap-[48px] w-full items-center justify-center">
-    <Link href="/start-your-own" >Start your own</Link>
-    <Link href="/locations" variant={2} >Find a meetup</Link>
+    <Link href="/start-your-own" >Start your own <ArrowLinkDiagonal /></Link>
+    <Link href="/locations" variant={2} >Find a meetup <ArrowLinkDiagonal fill="light" /></Link>
   </div>
 </div>
