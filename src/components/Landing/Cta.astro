@@ -1,0 +1,21 @@
+---
+import ArrowLinkDiagonal from "../../icons/arrow-link-diagonal.astro";
+import Link from "../Link.astro";
+
+---
+
+<section class="flex flex-col w-full px-4 items-center justify-center py-[96px]">
+  <h2 class="text-bwhite font-semibold text-[30px] lg:text-[48px] text-center">
+    Sounds fun? Start your own Beer.JS!
+  </h2>
+  <p class="text-bwhite text-[14px] lg:text-[18px] text-center font-normal mb-[48px]">
+    It's beer and JavaScript, what's not to like?
+  </p>
+  <Link href="/starter-kit">Learn how <ArrowLinkDiagonal /></Link>
+</section>
+
+<style>
+  section {
+    background: url('/js-bg.svg') repeat center center;
+  }
+</style>
