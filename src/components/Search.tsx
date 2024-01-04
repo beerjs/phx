@@ -1,7 +1,8 @@
 import { Select, createOptions } from '@thisbeyond/solid-select';
 import '@thisbeyond/solid-select/style.css';
 import './Search.css';
-import { createEffect, createSignal } from 'solid-js';
+import { Show, createSignal } from 'solid-js';
+import { createAutoAnimate } from '@formkit/auto-animate/solid';
 
 interface SearchProps {
   options: {
@@ -23,6 +24,7 @@ interface SearchProps {
 }
 
 export const Search = (props: SearchProps) => {
+  const [animationParent] = createAutoAnimate();
   const [selected, setSelected] = createSignal<string | null>(null);
 
   const fullRecord = () => {
@@ -82,11 +84,15 @@ export const Search = (props: SearchProps) => {
           </button>
         </div>
       </div>
-      <div class="w-full mb-20 lg:mb-0 lg:w-1/2 h-full lg:min-h-[700px] flex flex-col items-center justify-center p-4 transition">
-        {selected() ? (
+      <div
+        class="w-full mb-20 lg:mb-0 lg:w-1/2 h-full lg:min-h-[700px] flex flex-col items-center justify-center p-4 transition"
+        ref={animationParent}
+      >
+        <Show when={selected()} keyed>
           <div
             id="location-card"
             class="bg-bwhite max-w-[500px] p-[36px] md:p-[72px] border border-solid border-1 border-bblack font-jetbrains"
+            ref={animationParent}
           >
             <h1 class="capitalize text-bblack text-[24px] lg:text-[32px] font-extrabold mb-[24px]">
               {fullRecord()?.geoJSON?.properties.location || fullRecord()?.name}
@@ -114,9 +120,10 @@ export const Search = (props: SearchProps) => {
               )}
             </ul>
           </div>
-        ) : (
+        </Show>
+        <Show when={!selected()}>
           <img src="/map-placeholder.svg" alt="BeerJS logo" />
-        )}
+        </Show>
       </div>
     </div>
   );

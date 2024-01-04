@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/solid-js": "^3.0.3",
     "@astrojs/tailwind": "^5.1.0",
+    "@formkit/auto-animate": "^0.8.1",
     "@thisbeyond/solid-select": "^0.14.0",
     "astro": "^4.0.9",
     "astro-google-fonts-optimizer": "^0.2.2",
