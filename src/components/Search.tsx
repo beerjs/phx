@@ -99,14 +99,17 @@ export const Search = (props: SearchProps) => {
             )}
             <ul>
               <li>
-                <span>GH repo:</span>{' '}
+                <span>GH repo:</span> <br />
                 <a class="font-bold underline" href={fullRecord()?.url}>
                   {fullRecord()?.url}
                 </a>
               </li>
               {fullRecord()?.homepage && (
                 <li>
-                  Homepage: <a href={fullRecord()?.homepage}>{fullRecord()?.homepage}</a>
+                  Homepage: <br />
+                  <a class="font-bold underline" href={fullRecord()?.homepage}>
+                    {fullRecord()?.homepage}
+                  </a>
                 </li>
               )}
             </ul>
