@@ -60,8 +60,8 @@ import Menu from '../icons/menu.astro';
 
   document.querySelector('#mask')?.classList.remove('hidden');
 
-  openButton.addEventListener('click', () => drawer.show());
-  closeButton.addEventListener('click', () => drawer.hide());
+  openButton?.addEventListener('click', () => (drawer as any).show());
+  closeButton?.addEventListener('click', () => (drawer as any).hide());
 </script>
 
 
