@@ -6,9 +6,11 @@ import Cta from '../components/Landing/Cta.astro';
 ---
 
 <Base title="Home">
-  <Hero />
-  <div class="mt-[240px]">
-    <NewsReel limit={3} link="/news" />
-  </div>
-  <Cta />
+  <NewsReel />
 </Base>
+
+<style>
+  h1 {
+    text-shadow: -6.601px -6.601px 0px #0f0d0e;
+  }
+</style>

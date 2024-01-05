@@ -7,7 +7,7 @@ const aboutContents = await getEntry('posts', 'about');
 const body = await aboutContents.render();
 ---
 
-<Base title="About | BeerJS">
+<Base title="About">
   <MarkdownPost 
     title={aboutContents.data.title}
     body={body}
