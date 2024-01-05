@@ -1,0 +1,56 @@
+---
+
+interface Props {
+  title: string;
+  body: any;
+  cover?: string;
+  date?: string;
+  tags?: string[];
+}
+
+const { title, body, date, cover, tags } = Astro.props;
+
+console.log(body.headings);
+
+---
+
+<main class="w-full flex items-center justify-center p-8">
+  <article>
+    <aside>
+      <h3 class="font-jebrains text-bgrey uppercase mb-[28px]">
+        On this page
+      </h3>
+      {
+        body.headings.map((h: any) => {
+          return <a class="font-inter font-extrabold text-bgrey text-[14px] hover:underline" href={`#${h.slug}`}>{h.text}</a>
+        })
+      }
+    </aside>
+    <div>
+      <h1>{title}</h1>
+      <!-- <span>{date}</span>
+      <span>{category}</span> -->
+      {cover && <img src={cover} alt={title} />}
+      <section class="max-w-[85ch] w-full prose lg:prose-xl font-inter prose-h2:font-jetbrains prose=h3:font-jetbrains prose-h4:font-jetbrains text-bgrey">
+        <body.Content />
+      </section>
+    </div>
+  </article>
+</main>
+
+
+<style>
+  article {
+    @apply bg-bwhite p-[32px] sm:p-[48px] md:p-[72px] lg:p-[96px] md:p-[72px] border border-solid border-bblack w-full max-w-[1500px] flex;
+    box-shadow: 12px 12px 0px 0px #f9d857;
+  }
+
+  aside {
+    @apply mt-[120px] hidden lg:block;
+    width: 270px;
+  }
+
+  h1 {
+    @apply font-jetbrains capitalize text-bblack text-[36px] lg:text-[48px] font-extrabold mb-[48px];
+  }
+</style>

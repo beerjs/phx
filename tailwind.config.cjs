@@ -18,8 +18,9 @@ module.exports = {
         bbg: '#1e1e1e',
         bred: '#DA3A44',
         bwhite: '#FDF8ED',
+        bgrey: '#343433',
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };

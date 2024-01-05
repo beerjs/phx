@@ -5,8 +5,8 @@ import NewsReel from '../components/NewsReel.astro';
 import Cta from '../components/Landing/Cta.astro';
 ---
 
-<Base title="Home">
+<Base title="Home | BeerJS">
   <Hero />
-  <NewsReel />
+  <NewsReel limit={3} link="/news" />
   <Cta />
 </Base>

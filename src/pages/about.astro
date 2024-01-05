@@ -1,0 +1,18 @@
+---
+import MarkdownPost from '../components/MarkdownPost.astro';
+import Base from '../layouts/Base.astro';
+import { getEntry } from 'astro:content';
+
+const aboutContents = await getEntry('posts', 'about');
+const body = await aboutContents.render();
+---
+
+<Base title="About | BeerJS">
+  <MarkdownPost 
+    title={aboutContents.data.title}
+    body={body}
+    date={aboutContents.data.date}
+    cover={aboutContents.data.cover}
+    tags={aboutContents.data.tags}
+  />
+</Base>
