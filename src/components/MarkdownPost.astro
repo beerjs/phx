@@ -33,7 +33,7 @@ const { title, body, date, cover, tags } = Astro.props;
       {date && <date class="font-inter font-semibold mb-6 block">🗓️ {format(date, 'yyyy-MM-dd')}</date>}
       <h1>{title}</h1>
       {cover && <img src={cover} alt={title} />}
-      <section class="max-w-[85ch] w-full prose lg:prose-xl font-inter prose-h2:font-jetbrains prose=h3:font-jetbrains prose-h4:font-jetbrains text-bgrey prose-a:break-all">
+      <section class="max-w-[85ch] w-full prose lg:prose-xl font-inter prose-h2:font-jetbrains prose-h3:font-jetbrains prose-h4:font-jetbrains text-bgrey prose-a:break-all">
         <body.Content />
       </section>
     </div>
