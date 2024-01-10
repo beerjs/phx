@@ -12,12 +12,12 @@ import Twitter from "../icons/twitter.astro";
     <a href="/locations" class="border-byellow border-b-2 hover:border-bwhite transition w-[200px]">Find a meetup nearby</a>
   </div>
   <div class="flex-grow items-center justify-center hidden lg:flex">
-    <a class="w-[50px] block" href="/" id="logo">
+    <a class="w-[50px] block" href="/" id="logo-footer" aria-label="Home">
       <BeerJS />
     </a>
   </div>
   <div class="flex gap-4 flex-grow justify-end" id="socials">
-    <a href="https://github.com/beerjs">
+    <a href="https://github.com/beerjs" aria-label="GitHub">
       <Github />
     </a>
     <!-- <a href="">
@@ -27,7 +27,7 @@ import Twitter from "../icons/twitter.astro";
 </footer>
 
 <style>
-  #logo:hover {
+  #logo-footer:hover {
     filter: drop-shadow(1px 1px 0px #fff) drop-shadow(-1px -1px 0px #fff) drop-shadow(1px -1px 0px #fff) drop-shadow(-1px 1px 0px #fff);
   }
 

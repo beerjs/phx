@@ -13,17 +13,17 @@ import Menu from '../icons/menu.astro';
   >
     <a href="/about" class="hidden lg:inline">About</a>
     <a href="/locations" class="hidden lg:inline">Locations</a>
-    <a href="/" id="logo" class="w-[50px] lg:w-[66px] lg:min-w-[66px] hover:brightness-110">
+    <a href="/" id="logo" class="w-[50px] lg:w-[66px] lg:min-w-[66px] hover:brightness-110" aria-label="Home">
       <BeerJS />
     </a>
     <a href="/news" class="hidden lg:inline">News</a>
     <a href="/starter-kit" class="hidden lg:inline">Start your own</a>
-    <button class="w-[50px] text-byellow cursor-pointer inline-block lg:hidden hover:brightness-125" id="menu-button">
+    <button class="w-[50px] text-byellow cursor-pointer inline-block lg:hidden hover:brightness-125" id="menu-button" aria-label="Open menu">
       <Menu />
     </button>
   </div>
   <div class="gap-4 items-center justify-center col-span-2 hidden lg:flex">
-    <a href="https://github.com/beerjs" class="justify-self-end text-white fill-current">
+    <a href="https://github.com/beerjs" class="justify-self-end text-white fill-current" aria-label="GitHub">
       <Github />
     </a>
     <!-- <a href="/" class="text-white fill-current">

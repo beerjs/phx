@@ -6,7 +6,7 @@
     "email": "hello@darko.io",
     "url": "https://darko.io/"
   },
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -15,6 +15,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.0.4",
     "@astrojs/solid-js": "^3.0.3",
     "@astrojs/tailwind": "^5.1.0",
     "@formkit/auto-animate": "^0.8.1",
