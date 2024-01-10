@@ -1,6 +1,7 @@
 ---
 import { SEO } from 'astro-seo';
 import { GoogleFontsOptimizer } from 'astro-google-fonts-optimizer';
+import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
   title?: string;
@@ -32,9 +33,7 @@ const { title, description, type, image } = Astro.props;
       creator: '@d_bozhinovski',
     }}
     extend={{
-      // extending the default link tags
-      link: [{ rel: 'icon', href: '/favicon.ico' }],
-      // extending the default meta tags
+      link: [{ rel: 'icon', href: '/favicon.svg' }],
       meta: [
         {
           name: 'twitter:image',
@@ -55,4 +54,5 @@ const { title, description, type, image } = Astro.props;
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/dark.css" />
   <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+  <ViewTransitions />
 </head>

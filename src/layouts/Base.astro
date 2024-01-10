@@ -19,10 +19,10 @@ const { title, description, image, type, hideCta } = Astro.props;
   <Head title={title} description={description} image={image} type={type} />
   <body>
     <div class="flex flex-col bg-bbg min-h-screen">
-      <Navigation />
+      <Navigation transition:persist />
       <slot />
       { !hideCta &&  <Cta />}
-      <Footer />
+      <Footer transition:persist />
     </div>
   </body>
 </html>
