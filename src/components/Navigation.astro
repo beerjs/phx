@@ -54,14 +54,20 @@ import Menu from '../icons/menu.astro';
 <script>
   import 'https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/components/drawer/drawer.js';
 
-  const drawer = document.querySelector('#drawer') as HTMLElement;
-  const openButton = document.querySelector('#menu-button') as HTMLElement;
-  const closeButton = drawer.querySelector('button') as HTMLElement;
+  const initDrawer = () => {
+    const drawer = document.querySelector('#drawer') as HTMLElement;
+    const openButton = document.querySelector('#menu-button') as HTMLElement;
+    const closeButton = drawer.querySelector('button') as HTMLElement;
+  
+    document.querySelector('#mask')?.classList.remove('hidden');
+  
+    openButton?.addEventListener('click', () => (drawer as any).show());
+    closeButton?.addEventListener('click', () => (drawer as any).hide());
+  }
 
-  document.querySelector('#mask')?.classList.remove('hidden');
+  initDrawer();
 
-  openButton?.addEventListener('click', () => (drawer as any).show());
-  closeButton?.addEventListener('click', () => (drawer as any).hide());
+  document.addEventListener("astro:after-swap", () => initDrawer());
 </script>
 
 
