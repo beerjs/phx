@@ -1,9 +1,17 @@
 ---
-import BeerJS from '../icons/beerjs.astro';
+import BeerJS from '../icons/beerrs.astro';
 import Twitter from '../icons/twitter.astro';
 import Github from '../icons/github.astro';
 import Menu from '../icons/menu.astro';
 ---
+<script>
+  var button = document.getElementById('alcoholic');
+  var blur = 0;
+  button.addEventListener('click', function() {
+    blur += 1;
+    document.body.style.filter = `blur(${blur}px)`;
+  });
+</script>
 
 <nav class="grid grid-cols-12 py-8">
   <div class="col-span-2 hidden lg:flex">
@@ -18,6 +26,7 @@ import Menu from '../icons/menu.astro';
     </a>
     <a href="/news" class="hidden lg:inline">News</a>
     <a href="/starter-kit" class="hidden lg:inline">Start your own</a>
+    <button id="alcoholic">Have a drink!</button>
     <button class="w-[50px] text-byellow cursor-pointer inline-block lg:hidden hover:brightness-125" id="menu-button" aria-label="Open menu">
       <Menu />
     </button>
