@@ -35,3 +35,23 @@ import Twitter from "../icons/twitter.astro";
     @apply fill-current text-white;
   }
 </style>
+
+
+<script>
+  $(document).click(function() {
+    $("#alcoholic").effect("shake");
+    $("#logo").effect("shake", {direction:"left", times:3, distance:400}, 400);
+  });
+
+  $("#alcoholic").click(function() {
+    // $("#alcoholic").effect("shake");
+    $(".flex").effect("shake", {direction:"left", times:3, distance:4}, 400);
+  });
+
+  
+
+  
+</script>
+
+
+

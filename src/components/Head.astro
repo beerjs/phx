@@ -30,7 +30,7 @@ const { title, description, type, image } = Astro.props;
       },
     }}
     twitter={{
-      creator: '@d_bozhinovski',
+      creator: '@beerjs_phx',
     }}
     extend={{
       link: [{ rel: 'icon', href: '/favicon.svg' }],
@@ -52,14 +52,17 @@ const { title, description, type, image } = Astro.props;
   />
   <GoogleFontsOptimizer url="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&display=swap" />
 
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/themes/dark.css" />
   <link rel="sitemap" href="/sitemap-index.xml" />
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.12.0/cdn/shoelace-autoloader.js"></script>
+  <script is:inline src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script is:inline src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>  
 
   <script
       defer
-      data-domain="beerjs.tech"
+      data-domain="beer.fart.social"
       data-api="https://worker-restless-haze-4722.hello-83f.workers.dev/api/event"
       src="https://worker-restless-haze-4722.hello-83f.workers.dev/js/script.js"></script>
 

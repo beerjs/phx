@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.beerjs.tech/sitemap-index.xml
+Sitemap: https://beer.fart.social/sitemap-index.xml
