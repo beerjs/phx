@@ -34,12 +34,19 @@ import Twitter from "../icons/twitter.astro";
   #socials a:hover {
     @apply fill-current text-white;
   }
+
+  body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
 </style>
 
 
 <script>
   $(document).click(function() {
-    $("#alcoholic").effect("shake");
     $("#logo").effect("shake", {direction:"left", times:3, distance:400}, 400);
   });
 
@@ -47,10 +54,6 @@ import Twitter from "../icons/twitter.astro";
     // $("#alcoholic").effect("shake");
     $(".flex").effect("shake", {direction:"left", times:3, distance:4}, 400);
   });
-
-  
-
-  
 </script>
 
 
