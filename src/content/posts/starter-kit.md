@@ -22,6 +22,7 @@ It's totally fine to ask for an update in the comments or contact **Jordan or Da
 - [Follow the Code of Conduct](#follow-the-code-of-conduct)
 - [A note about beer](#a-note-about-beer)
 - [Tools to help you run your Beer.rs](#tools-to-help-you-run-your-beerrs)
+- [Recipe for success](#recipe-for-success)
 - [Utilities](#utilities)
 - [Website themes](#website-themes)
 - [Assets](#assets)
@@ -29,7 +30,6 @@ It's totally fine to ask for an update in the comments or contact **Jordan or Da
 - [Rules on donations and sponsorships](#rules-on-donations-and-sponsorships)
 - [Do this](#do-this)
 - [Not this (totally made this up)](#not-this-totally-made-this-up)
-- [Bonus Section: How to Make Pozole](#bonus-section-how-to-make-pozole)
 
 ---
 
@@ -54,52 +54,23 @@ Be excellent to each other. Seriously. If you don't, we'll send the Rustacean Cr
 
 ### A note about beer
 
-Beer is great. Rust is great. Together, they are greater. Remember to enjoy responsibly. And if you don't drink, no worries, substitute with your favorite beverage - water, coffee, tea, or unicorn tears.
+Beer is great. Rust is great. JavaScript is kinda okay... well, no. It's kinda boring if we're actually truly being honest with ourselves.
+
+That said, together they are greater. Remember to enjoy responsibly. And if you don't drink, no worries, substitute with your favorite beverage - water, coffee, tea, or unicorn tears. We only support... well, no, we support all beverages. Just have fun!
 
 ### Tools to help you run your Beer.rs
 
 Here are some totally useful and not at all randomly chosen tools:
 
-- **Utilities:** A random collection of scripts we found in the back of our digital closet. Use at your own risk.
+- **Utilities:** A random collection of scripts we found in the back of our digital closet. Use at your own risk. Don't call our moms.
 - **Website Themes:** Because nothing says professional like a 90s Geocities-inspired theme.
 - **Assets:** High-quality images of beer and random Rust logos we drew ourselves.
 - **Stickers:** Print your own using our template! Just don't blame us if they turn out looking like a potato.
+- **Dotfiles:** Because Vim is the only true editor. Fight us.
 
-### Utilities
+### Recipe for success
 
-- A collection of totally random and questionably useful utilities. Examples include: a script to calculate the number of beers you can buy with your GitHub stars, and another one to turn your entire codebase into emoji.
-
-### Website themes
-
-- Choose from our extensive collection of themes, including "Retro 90s," "Angry Cat," and "Unicorn Magic." Your website will be the envy of all five people who visit it.
-
-### Assets
-
-- High-resolution images of beer mugs, Rust logos, and random memes. Feel free to mix and match for maximum visual chaos.
-
-### Stickers
-
-- Print your own Beer.rs stickers using our customizable templates! Perfect for laptops, water bottles, or random street signs. Warning: may cause extreme jealousy among non-participants.
-
-### Rules on donations and sponsorships
-
-We accept donations in the form of pizza slices and obscure craft beers. Sponsorships are welcome, but we only accept offers from companies with punny names. If your company name doesn’t make us chuckle, you’re out.
-
-### Do this
-
-- Create your repo.
-- Follow the **Code of Conduct** (be excellent to each other and party on, dudes).
-- Spread the word.
-- Enjoy a cold beer while writing perfect Rust code.
-
-### Not this (totally made this up)
-
-- Don’t create a repo if you don’t like beer or Rust (or both).
-- Don’t follow these instructions too seriously.
-
-### Bonus Section: How to Make Pozole
-
-Because every Beer.rs event needs good food, here’s a recipe for a delicious pozole:
+Pozole is a traditional Mexican soup made with pork, hominy, and spices. It's perfect for a cozy night in with friends or family. Here's a simple recipe to get you started:
 
 **Ingredients:**
 - 2 lbs of pork shoulder, cut into chunks
@@ -121,3 +92,34 @@ Because every Beer.rs event needs good food, here’s a recipe for a delicious p
 
 Enjoy your pozole while discussing the finer points of Rust’s ownership system!
 
+### Utilities
+
+- A collection of totally random and questionably useful utilities. Examples include: a script to calculate the number of beers you can buy with your GitHub stars, and another one to turn your entire codebase into emoji.
+
+### Website themes
+
+- Choose from our extensive collection of themes, including "Retro 90s," "Angry Cat," and "Unicorn Magic." Your website will be the envy of all five people who visit it.
+
+### Assets
+
+- High-resolution images of beer mugs, Rust logos, and random memes. Feel free to mix and match for maximum visual chaos.
+
+### Stickers
+
+- Print your own Beer.rs stickers using our customizable templates! Perfect for laptops, water bottles, or random street signs. Warning: may cause extreme jealousy among non-participants.
+
+### Rules on donations and sponsorships
+
+We accept donations in the form of pizza slices and obscure craft wine, beer in a pinch. (Come on, it's beer.js, we've had every beer out there at this point and we're bored.) Sponsorships are welcome, but we only accept offers from companies with punny names. If your company name doesn’t make us chuckle, you’re out.
+
+### Do this
+
+- Create your repo.
+- Follow the **Code of Conduct** (be excellent to each other, no loafing, and party on homies).
+- Proselytize the word of Rust and beer to all who will listen.
+- Enjoy a cold beer while writing absolutely perfect code that passes the first time, every time.
+
+### Not this (totally made this up)
+
+- Don’t create a repo if you don’t like beer or Rust or JavaScript (or any).
+- Follow these instructions very carefully. If you don’t, we’ll send the Rustacean Crab to recompile all of your terrible TypeScript into Coffeescript to haunt your dreams.
